@@ -12,17 +12,16 @@
     color: white;
     border: inset 4px rgb(19, 19, 19);
     padding: 5px 10px;
+    display: flexbox;
     font-family: unbounded;
     text-align: center;
     font-size: 14px;
     border-radius: 25px;
     transition-duration: 0.25s;
-    left: 50%;
-    margin: 0;
 }
 .navButton:hover {
-    color: rgb(26, 26, 26);
     background-color: white;
+    color: rgb(26, 26, 26);
     font-size: 15px;
     transition-duration: 0.25s;
 }
