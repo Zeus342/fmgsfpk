@@ -1,0 +1,100 @@
+@keyframes enterHeader { /*the animation for the fade in of the header "Ueberschrift"*/
+    0% {
+        transform: translateY(-15px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+@keyframes enterButtonActive { /*the animation for the fade in of the active button*/
+    0% {
+        transform: translateY(2px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(-5px);
+        opacity: 100%;
+    }
+}
+@keyframes enterButton { /*the animation for the fade in of the navButtons*/
+    0% {
+        transform: translateY(2px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+.version { /*This formats the version display on the website*/
+    color: rgb(211, 211, 211);
+    font-size: 10px;
+}
+.projectHeader { /*This drives the header "Ueberschrift der Seite"*/
+    color: rgb(19, 19, 19);
+    text-align: center;
+    font-size: 38px;
+    animation: enterHeader 1000ms;
+}
+.enterButtonActive { /*this is the enter animation for the active button*/
+    animation: enterButtonActive 785ms ease-in-out;
+}
+.enterButton { /*this is the enter animation for the navButtons*/
+    animation: enterButton 785ms ease-in-out;
+}
+.activeButton { /*This drives the activated button corrosponding to the page we are on*/
+    color: rgb(26, 26, 26);
+    background-color: white;
+    border-color: rgb(19, 19, 19);
+    border-width: 4px;
+    padding: 5px 10px;
+    font-family: unbounded;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+    transform: translateY(-5px);
+    transition: transform 250ms 20ms ease-in-out;
+}
+.activeButton:hover {
+    cursor: not-allowed;
+}
+.activeButton:active {
+    cursor: not-allowed;
+    transform: scale(0.95);
+}
+.navButton { /*This drives the normal button*/
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border-color: rgb(19, 19, 19);
+    border-width: 4px;
+    padding: 5px 10px;
+    font-family: unbounded;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+    transition-duration: 0.25s;
+    transition: transform 250ms 20ms ease-in-out;
+}
+.navButton:hover {
+    color: rgb(26, 26, 26);
+    background-color: white;
+    transition-duration: 0.25s;
+    transform: translateY(-5px);
+} 
+.navButton:active {
+    color: rgb(26, 26, 26);
+    background-color: white;
+    transition-duration: 0.3s;
+    transform: scale(0.95);
+} 
+.center { /*This is simple centering code*/
+    margin: 0;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
