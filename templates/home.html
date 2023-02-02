@@ -2,21 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/home.css') }}">
+    <link rel="stylesheet" href="/static/css/home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unbounded">
+    <script src="/static/javascript/home.js"></script>
     <title>DEINPROJEKT</title>
 </head>
 <body>
     <p class="version" style="font-family:unbounded;">website v.pre0.7</p>
-    <div class="center">
-        <span>
+    <span class="center">
+        <div style="margin-bottom: 60px;">
             <h1 class="projectHeader"><span style="font-family:unbounded">DEIN PROJEKT</span></h1>
-        </span>
-        <span>
-            <button class="activeButton enterButtonActive">Home</button>
-            <a href="http://127.0.0.1:5000/projects"><button class="navButton enterButton">Projekte</button></a>
-            <a href="http://127.0.0.1:5000/unserprojekt"><button class="navButton enterButton">Unser Projekt</button></a>
-        </span>
+        </div>
+    </span>
+    <span class="center">
+        <div style="margin-top: 60px;">
+            <button id="homeButton" class="navButton" onclick="makeHomeActiveButton()">Home</button>
+            <button id="projectButton" class="navButton" onclick="makeProjectsActiveButton()">Projekte</button>
+            <button id="unserProjektButton" class="navButton" onclick="showHideUnserProjekt()">Unser Projekt</button>
+        </div>
+    </span>
+    <div id="unserProjektDiv">
+        <p>Unser Projekt DIV</p>
+    </div>
+
+    <p id="demo"></p>
+
+    <div class="footer">
+        <p style="font-family: unbounded;">Footer</p>
+    </div>
     </div>
 </body>
 </html>
