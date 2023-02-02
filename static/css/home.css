@@ -1,11 +1,11 @@
-@keyframes enterHeader { /*the animation for the fade in of the header "Ueberschrift"*/
+/*@keyframes enterHeader { /*the animation for the fade in of the header "Ueberschrift"
     0% {
         transform: translateY(-15px);
     }
     100% {
         transform: translateY(0px);
     }
-}
+}*/
 /*@keyframes enterButtonActive { /*the animation for the fade in of the active button
     0% {
         transform: translateY(2px);
@@ -17,7 +17,15 @@
     }
 }*/
 
-@keyframes enterButton { /*the animation for the fade in of the navButtons*/
+/*@keyframes enterButton { /*the animation for the fade in of the navButtons
+    0% {
+        transform: translateY(2px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}*/
+@keyframes moveUp { /*the animation for the fade in of the navButtons*/
     0% {
         transform: translateY(2px);
     }
@@ -26,7 +34,8 @@
     }
 }
 .version { /*This formats the version display on the website*/
-    color: rgb(211, 211, 211);
+    color: rgb(26, 26, 26);
+    opacity: 20%;
     font-size: 10px;
 }
 .projectHeader { /*This drives the header "Ueberschrift der Seite"*/
@@ -48,7 +57,7 @@
     border-radius: 25px;
     transform: translateY(-5px);
     /*animation: enterButtonActive 785ms ease-in-out;*/
-    transition: transform 50ms 20ms ease-in-out;
+    transition: transform 70ms 50ms ease-in-out;
 }
 .activeButton:hover {
     cursor: not-allowed;
@@ -57,7 +66,7 @@
     cursor: not-allowed;
     transform: scale(0.95);
 }
-.navButton { /*This drives the normal button*/
+.navButton { /*This drives the normal buttons*/
     background-color: rgb(19, 19, 19);
     color: white;
     border-color: rgb(19, 19, 19);
@@ -68,42 +77,45 @@
     display: inline-block;
     text-align: center;
     border-radius: 25px;
-    transition-duration: 0.05s;
+    transition-duration: 0.07s;
     animation: enterButton 785ms ease-in-out;
-    transition: transform 50ms 20ms ease-in-out;
+    transition: transform 70ms 50ms ease-in-out;
 }
 .navButton:hover {
     color: rgb(26, 26, 26);
     background-color: white;
-    transition-duration: 0.05s;
+    transition-duration: 0.07s;
     transform: translateY(-5px);
 } 
 .navButton:active {
     color: rgb(26, 26, 26);
     background-color: white;
-    transition-duration: 0.05s;
+    transition-duration: 0.07s;
     transform: scale(0.95);
 } 
 .center { /*This is simple centering code*/
     margin: 0;
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transition: transform 70ms 50ms ease-in-out;
+    transform: translate(-48%, -60%);
 }
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
-    color: white;
+    background-color: rgb(248, 248, 248);;
     text-align: center;
  }
-#unserProjektDiv {
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
-    background-color: lightblue;
-    margin-top: 20px;
-}
+ .nextTo {
+    display: inline-flex;
+ }
+ .moveUp { /*this code moves the website up, to display content*/
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-48%, -60%);
+ }

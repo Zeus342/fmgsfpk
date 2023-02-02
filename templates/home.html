@@ -8,27 +8,28 @@
     <title>DEINPROJEKT</title>
 </head>
 <body>
-    <p class="version" style="font-family:unbounded;">website v.pre0.7</p>
-    <span class="center">
+    <div>
+        <span class="nextTo">
+            <p class="version" style="font-family:unbounded;">website v.pre0.9</p>
+            <a href="https://www.linode.com">
+                <img src="/static/assets/linode.png" width="36" height="12" style="padding-top: 12px; padding-left: 7px; opacity: 20%;">
+            </a>
+        </span>
+    </div>
+    <span id="header" class="center">
         <div style="margin-bottom: 60px;">
             <h1 class="projectHeader"><span style="font-family:unbounded">DEIN PROJEKT</span></h1>
         </div>
     </span>
-    <span class="center">
+    <span id="buttons" class="center">
         <div style="margin-top: 60px;">
             <button id="homeButton" class="navButton" onclick="makeHomeActiveButton()">Home</button>
             <button id="projectButton" class="navButton" onclick="makeProjectsActiveButton()">Projekte</button>
-            <button id="unserProjektButton" class="navButton" onclick="showHideUnserProjekt()">Unser Projekt</button>
+            <button id="unserProjektButton" class="navButton" onclick="makeUnserProjektActiveButton()">Unser Projekt</button>
         </div>
     </span>
-    <div id="unserProjektDiv">
-        <p>Unser Projekt DIV</p>
-    </div>
-
-    <p id="demo"></p>
-
     <div class="footer">
-        <p style="font-family: unbounded;">Footer</p>
+        <p style="font-family: unbounded; font-size: 10px;">Footer</p>
     </div>
     </div>
 </body>
