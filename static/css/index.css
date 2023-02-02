@@ -1,0 +1,27 @@
+.projectHeader {
+    color: rgb(19, 19, 19);
+    text-align: center;
+    padding: 5px;
+}
+.projectDescHeader {
+    color: rgb(55, 55, 55);
+    padding-left: 20px;
+}
+.navButton {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border: inset 4px rgb(19, 19, 19);
+    padding: 5px 10px;
+    display: flexbox;
+    font-family: unbounded;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 25px;
+    transition-duration: 0.25s;
+}
+.navButton:hover {
+    background-color: white;
+    color: rgb(26, 26, 26);
+    font-size: 15px;
+    transition-duration: 0.25s;
+}
