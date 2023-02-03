@@ -25,12 +25,20 @@
         transform: translateY(0px);
     }
 }*/
-@keyframes moveUp { /*the animation for the fade in of the navButtons*/
+@keyframes moveUp { /*the animation for moving up the header and buttons*/
     0% {
-        transform: translateY(2px);
+        top: 50%;
     }
     100% {
-        transform: translateY(0px);
+        top: 20%;
+    }
+}
+@keyframes moveDown { /*the animation for moving down the header and buttons after they have been moved up*/
+    0% {
+        top: 20%;
+    }
+    100% {
+        top: 50%;
     }
 }
 .version { /*This formats the version display on the website*/
@@ -86,6 +94,7 @@
     background-color: white;
     transition-duration: 0.07s;
     transform: translateY(-5px);
+    cursor: pointer;
 } 
 .navButton:active {
     color: rgb(26, 26, 26);
@@ -112,10 +121,19 @@
  .nextTo {
     display: inline-flex;
  }
- .moveUp { /*this code moves the website up, to display content*/
+ .moveUp { /*this code moves the header and buttons up to display content*/
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-48%, -60%);
+    animation: moveUp 500ms 50ms ease-in-out forwards;
+ }
+ .moveDown { /*this code moves the header and buttons down after they have been moved up to display content*/
     margin: 0;
     position: absolute;
     left: 50%;
     top: 20%;
     transform: translate(-48%, -60%);
+    animation: moveDown 500ms 50ms ease-in-out forwards;
  }
