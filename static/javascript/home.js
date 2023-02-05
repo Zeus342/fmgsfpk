@@ -15,11 +15,13 @@ var buttonsActiveClass = document.getElementById("buttons").className
 
 function atHome() {
     document.getElementById("homeButton").className = "activeButton";
+    document.getElementById("homeButton").disabled = true;
 }
 
 function makeHomeActiveButton() {
     document.getElementById("homeButton").className = "activeButton";
-    
+
+
     if (buttonsActiveClass === "moveUp");
         document.getElementById("header").className = "moveDown";
         document.getElementById("buttons").className = "moveDown";
@@ -34,6 +36,7 @@ function makeHomeActiveButton() {
 }
 function makeProjectsActiveButton() {
     document.getElementById("projectButton").className = "activeButton";
+    document.getElementById("homeButton").disabled = false;
     document.getElementById("header").className = "moveUp";
     document.getElementById("buttons").className = "moveUp";
 
@@ -47,6 +50,7 @@ function makeProjectsActiveButton() {
 }
 function makeUnserProjektActiveButton() {
     document.getElementById("unserProjektButton").className = "activeButton";
+    document.getElementById("homeButton").disabled = false;
     document.getElementById("header").className = "moveUp";
     document.getElementById("buttons").className = "moveUp";
 
@@ -57,8 +61,4 @@ function makeUnserProjektActiveButton() {
     if (projectButtonActiveClass === "activeButton");
         document.getElementById("homeButton").className = "navButton";
         document.getElementById("projectButton").className = "navButton";
-}
-
-function myfunction() {
-    document.getElementById("projectButton")
 }

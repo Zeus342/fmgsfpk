@@ -8,29 +8,88 @@
     <title>DEINPROJEKT</title>
 </head>
 <body onload="atHome()">
-    <div>
-        <span class="nextTo">
+
+    <div id="version">
+        <span style="display: inline-flex;">
             <p class="version" style="font-family:unbounded;">website v.pre0.9</p>
             <a href="https://www.linode.com">
                 <img src="/static/assets/linode.png" width="36" height="12" style="padding-top: 12px; padding-left: 7px; opacity: 20%;">
             </a>
         </span>
     </div>
-    <span id="header" class="center">
-        <div style="margin-bottom: 60px;">
-            <h1 class="projectHeader"><span style="font-family:unbounded">DEIN PROJEKT</span></h1>
+
+    <div>
+        <span id="header" class="centerHV">
+            <div style="margin-bottom: 60px;">
+                <h1 class="projectHeader"><span style="font-family:unbounded">DEIN PROJEKT</span></h1>
+            </div>
+        </span>
+    </div>
+        
+    <div>
+        <span id="buttons" class="centerHV">
+            <div style="margin-top: 60px;">
+                <button id="homeButton" class="navButton" onclick="makeHomeActiveButton()">Home</button>
+                <button id="projectButton" class="navButton" onclick="makeProjectsActiveButton()">Projekte</button>
+                <button id="unserProjektButton" class="navButton" onclick="makeUnserProjektActiveButton()">Unser Projekt</button>
+            </div>
+        </span>
+    </div>
+
+    <div id="projectsGallery" class="projectsGallery">
+        <div class="gallery">
+            <img src="/static/assets/projectImageTest.jpg" alt="projectImageTest">
+            </a>
+            <div class="galleryHeader">Projekt Ueberschrift</div>
+            <div class="galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
         </div>
-    </span>
-    <span id="buttons" class="center">
-        <div style="margin-top: 60px;">
-            <button id="homeButton" class="navButton" onclick="makeHomeActiveButton()">Home</button>
-            <button id="projectButton" class="navButton" onclick="makeProjectsActiveButton()">Projekte</button>
-            <button id="unserProjektButton" class="navButton" onclick="makeUnserProjektActiveButton()">Unser Projekt</button>
+        
+        <div class="gallery">
+            <img src="/static/assets/projectImageTest.jpg" alt="projectImageTest">
+            </a>
+            <div class="galleryHeader">Projekt Ueberschrift</div>
+            <div class="galleryDesc">Projekt Beschreibung</div>
         </div>
-    </span>
+        
+        <div class="gallery">
+            <img src="/static/assets/projectImageTest.jpg" alt="projectImageTest">
+            </a>
+            <div class="galleryHeader">Projekt Ueberschrift</div>
+            <div class="galleryDesc">Projekt Beschreibung</div>
+        </div>
+        
+        <div class="gallery">
+            <img src="/static/assets/projectImageTest.jpg" alt="projectImageTest">
+            </a>
+            <div class="galleryHeader">Projekt Ueberschrift</div>
+            <div class="galleryDesc">Projekt Beschreibung</div>
+        </div>
+
+        <div class="gallery">
+            <img src="/static/assets/projectImageTest.jpg" alt="projectImageTest">
+            </a>
+            <div class="galleryHeader">Projekt Ueberschrift</div>
+            <div class="galleryDesc">Projekt Beschreibung</div>
+        </div>
+
+        <div class="gallery">
+            <img src="/static/assets/projectImageTest.jpg" alt="projectImageTest">
+            </a>
+            <div class="galleryHeader">Projekt Ueberschrift</div>
+            <div class="galleryDesc">Projekt Beschreibung</div>
+        </div>
+
+        <div class="gallery">
+            <img src="/static/assets/projectImageTest.jpg" alt="projectImageTest">
+            </a>
+            <div class="galleryHeader">Projekt Ueberschrift</div>
+            <div class="galleryDesc">Projekt Beschreibung</div>
+        </div>
+    </div>
+
     <div class="footer">
         <p style="font-family: unbounded; font-size: 10px;">Footer</p>
     </div>
-    </div>
+
 </body>
 </html>
