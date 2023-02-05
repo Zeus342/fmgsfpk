@@ -30,12 +30,12 @@
         top: 50%;
     }
     100% {
-        top: 7%;
+        top: 10%;
     }
 }
 @keyframes moveDown { /*the animation for moving down the header and buttons after they have been moved up*/
     0% {
-        top: 7%;
+        top: 10%;
     }
     100% {
         top: 50%;
@@ -60,7 +60,6 @@
     padding: 5px 10px;
     font-family: unbounded;
     font-size: 15px;
-    display: inline-block;
     text-align: center;
     border-radius: 25px;
     transform: translateY(-5px);
@@ -81,7 +80,6 @@
     padding: 5px 10px;
     font-family: unbounded;
     font-size: 15px;
-    display: inline-block;
     text-align: center;
     border-radius: 25px;
     transition-duration: 0.07s;
@@ -136,13 +134,19 @@
     margin: 0;
     position: absolute;
     left: 50%;
-    top: 7%;
+    top: 10%;
     transform: translate(-48%, -60%);
     animation: moveDown 500ms 50ms ease-in-out forwards;
  }
+ .galleryOrganizer {
+    width: 1260px; 
+    margin: 0 auto;
+    padding-top: 5%;
+ }
  .gallery {
-    margin: 10px;
+    margin: 5px;
     border: 2px inset rgb(19, 19, 19);
+    background-color: rgb(255, 255, 255);
     float: left;
     width: 300px;
     height: 275px;
@@ -154,7 +158,7 @@
     transform: scale(1.02);
 }
 .gallery:active {
-    transform: scale(0.98);
+    transform: scale(1);
 }
 .gallery img {
     width: 100%;
