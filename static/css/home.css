@@ -41,6 +41,30 @@
         top: 50%;
     }
 }
+@keyframes showContent {
+    0% {
+        opacity: 0%;
+        transform: translateY(100px);
+        visibility: hidden;
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0px);
+        visibility: visible;
+    }
+}
+@keyframes hideContent {
+    0% {
+        opacity: 100%;
+        transform: translateY(0px);
+        visibility: visible;
+    }
+    100% {
+        opacity: 0%;
+        transform: translateY(100px);
+        visibility: hidden;
+    }
+}
 .version { /*This formats the version display on the website*/
     color: rgb(26, 26, 26);
     opacity: 20%;
@@ -53,10 +77,9 @@
     animation: enterHeader 1000ms;
 }
 .activeButton { /*This drives the activated button corrosponding to the page we are on*/
-    color: rgb(26, 26, 26);
     background-color: white;
+    color: rgb(26, 26, 26);
     border-color: rgb(19, 19, 19);
-    border-width: 4px;
     padding: 5px 10px;
     font-family: unbounded;
     font-size: 15px;
@@ -75,8 +98,6 @@
 .navButton { /*This drives the normal buttons*/
     background-color: rgb(19, 19, 19);
     color: white;
-    border-color: rgb(19, 19, 19);
-    border-width: 4px;
     padding: 5px 10px;
     font-family: unbounded;
     font-size: 15px;
@@ -128,7 +149,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-48%, -60%);
-    animation: moveUp 500ms 50ms ease-in-out forwards;
+    animation: moveUp 250ms 50ms ease-in-out forwards;
  }
  .moveDown { /*this code moves the header and buttons down after they have been moved up to display content*/
     margin: 0;
@@ -136,12 +157,32 @@
     left: 50%;
     top: 10%;
     transform: translate(-48%, -60%);
-    animation: moveDown 500ms 50ms ease-in-out forwards;
+    animation: moveDown 250ms 50ms ease-in-out forwards;
  }
- .galleryOrganizer {
-    width: 1260px; 
+ .contentHide {
+    visibility: hidden;
+ }
+ .showProjectsContent {
+    width: 1260px;
     margin: 0 auto;
-    padding-top: 5%;
+    opacity: 0%;
+    animation: showContent 250ms 120ms ease-in-out forwards;
+ }
+ .hideProjectsContent {
+    width: 1260px;
+    margin: 0 auto;
+    animation: hideContent 120ms 50ms ease-in-out forwards;
+ }
+ .showUnserProjektContent {
+    width: 1260px;
+    margin: 0 auto;
+    opacity: 0%;
+    animation: showContent 250ms 120ms ease-in-out forwards;
+ }
+ .hideUnserProjektContent {
+    width: 1260px;
+    margin: 0 auto;
+    animation: hideContent 120ms 50ms ease-in-out forwards;
  }
  .gallery {
     margin: 5px;
@@ -150,7 +191,7 @@
     float: left;
     width: 300px;
     height: 275px;
-    transition: transform 70ms 50ms ease-in-out;
+    transition: transform 150ms 50ms ease-in-out;
     overflow: hidden;
     border-radius: 10px;
 }
