@@ -45,12 +45,12 @@
     0% {
         opacity: 0%;
         transform: translateY(100px);
-        visibility: hidden;
+        display: none;
+        display: block;
     }
     100% {
         opacity: 100%;
         transform: translateY(0px);
-        visibility: visible;
     }
 }
 @keyframes hideContent {
@@ -85,6 +85,7 @@
     font-size: 15px;
     text-align: center;
     border-radius: 25px;
+    border: 2px solid rgb(19, 19, 19);
     transform: translateY(-5px);
     /*animation: enterButtonActive 785ms ease-in-out;*/
     transition: transform 70ms 50ms ease-in-out;
@@ -102,6 +103,7 @@
     font-family: unbounded;
     font-size: 15px;
     text-align: center;
+    border: 2px solid rgb(19, 19, 19);
     border-radius: 25px;
     transition-duration: 0.07s;
     animation: enterButton 785ms ease-in-out;
@@ -160,7 +162,7 @@
     animation: moveDown 250ms 50ms ease-in-out forwards;
  }
  .contentHide {
-    visibility: hidden;
+    display: none;
  }
  .showProjectsContent {
     width: 1260px;
@@ -175,7 +177,11 @@
  }
  .showUnserProjektContent {
     width: 1260px;
+<<<<<<< Updated upstream
     margin: 0 auto;
+=======
+    margin: auto;
+>>>>>>> Stashed changes
     opacity: 0%;
     animation: showContent 250ms 120ms ease-in-out forwards;
  }
@@ -186,7 +192,7 @@
  }
  .gallery {
     margin: 5px;
-    border: 2px inset rgb(19, 19, 19);
+    border: 2px solid rgb(19, 19, 19);
     background-color: rgb(255, 255, 255);
     float: left;
     width: 300px;
@@ -204,7 +210,7 @@
 .gallery img {
     width: 100%;
     height: auto;
-    border-bottom: 2px inset rgb(19, 19, 19);
+    border-bottom: 2px solid rgb(19, 19, 19);
     transition: border 70ms 50ms ease-in-out;
 }
 .galleryHeader {
