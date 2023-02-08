@@ -8,6 +8,7 @@
     <title>DEINPROJEKT</title>
 </head>
 <body onload="atHome()">
+    <meta name="viewport" content="initial-scale=1">
 
     <div id="version">
         <span style="display: inline-flex;">
@@ -30,9 +31,9 @@
         <div>
             <span id="buttons" class="centerHV">
                 <div style="margin-top: 60px;">
-                    <button id="homeButton" class="navButton" onclick="makeHomeActiveButton(), hideProjectsContent(), hideUnserProjektContent()">Home</button>
-                    <button id="projectsButton" class="navButton" onclick="makeProjectsActiveButton(), showProjectsContent()">Projekte</button>
-                    <button id="unserProjektButton" class="navButton" onclick="makeUnserProjektActiveButton(), showUnserProjektContent()">Unser Projekt</button>
+                    <button id="homeButton" class="navButton" onclick="makeHomeActiveButton()">Home</button>
+                    <button id="projectButton" class="navButton" onclick="makeProjectsActiveButton()">Projekte</button>
+                    <button id="unserProjektButton" class="navButton" onclick="makeUnserProjektActiveButton()">Unser Projekt</button>
                 </div>
             </span>
         </div>
@@ -95,13 +96,42 @@
                 <div class="galleryHeader">Projekt Ueberschrift</div>
                 <div class="galleryDesc">Projekt Beschreibung</div>
             </div>
+
+            <div class="gallery">
+                <img src="/static/assets/projectImageTest.jpg" alt="projectImageTest">
+                </a>
+                <div class="galleryHeader">Projekt Ueberschrift</div>
+                <div class="galleryDesc">Projekt Beschreibung</div>
+            </div>
+
+            <div class="gallery">
+                <img src="/static/assets/projectImageTest.jpg" alt="projectImageTest">
+                </a>
+                <div class="galleryHeader">Projekt Ueberschrift</div>
+                <div class="galleryDesc">Projekt Beschreibung</div>
+            </div>
+
+            <div class="gallery">
+                <img src="/static/assets/projectImageTest.jpg" alt="projectImageTest">
+                </a>
+                <div class="galleryHeader">Projekt Ueberschrift</div>
+                <div class="galleryDesc">Projekt Beschreibung</div>
+            </div>
+
+            <div class="gallery">
+                <img src="/static/assets/projectImageTest.jpg" alt="projectImageTest">
+                </a>
+                <div class="galleryHeader">Projekt Ueberschrift</div>
+                <div class="galleryDesc">Projekt Beschreibung</div>
+            </div>
         </div>
     </div>
-    <br>
-    <div id="unserProjektContent" class="contentHide" style="border: solid 2px black;">
-        <h1 class="unserProjektHeader">Ueberschrift</h1>
+    <div>
+        <div id="unserProjektContent" class="contentHide">
+            <div class="galleryHeader">Projekt Ueberschrift</div>
+            <div class="galleryDesc">Projekt Beschreibung</div>
+        </div>
     </div>
-    <br>
     <div class="footer">
         <p style="font-family: unbounded; font-size: 10px;">Footer</p>
     </div>
