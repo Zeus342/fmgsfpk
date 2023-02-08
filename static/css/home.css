@@ -53,18 +53,6 @@
         visibility: visible;
     }
 }
-@keyframes hideContent {
-    0% {
-        opacity: 100%;
-        transform: translateY(0px);
-        visibility: visible;
-    }
-    100% {
-        opacity: 0%;
-        transform: translateY(100px);
-        visibility: hidden;
-    }
-}
 .version { /*This formats the version display on the website*/
     color: rgb(26, 26, 26);
     opacity: 20%;
@@ -164,25 +152,14 @@
  }
  .showProjectsContent {
     width: 1260px;
-    margin: 0 auto;
+    margin: auto;
     opacity: 0%;
     animation: showContent 250ms 120ms ease-in-out forwards;
- }
- .hideProjectsContent {
-    width: 1260px;
-    margin: 0 auto;
-    animation: hideContent 120ms 50ms ease-in-out forwards;
  }
  .showUnserProjektContent {
-    width: 1260px;
-    margin: 0 auto;
+    margin: auto;
     opacity: 0%;
     animation: showContent 250ms 120ms ease-in-out forwards;
- }
- .hideUnserProjektContent {
-    width: 1260px;
-    margin: 0 auto;
-    animation: hideContent 120ms 50ms ease-in-out forwards;
  }
  .gallery {
     margin: 5px;
@@ -224,4 +201,17 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+.unserProjektHeader {
+    color: rgb(19, 19, 19);
+    font-family: unbounded;
+    font-size: 15px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.unserProjektDesc {
+    color: rgb(19, 19, 19);
+    font-family: unbounded;
+    font-size: 12px;
+    text-align: center;
 }
