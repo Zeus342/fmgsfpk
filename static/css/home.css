@@ -45,12 +45,11 @@
     0% {
         opacity: 0%;
         transform: translateY(100px);
-        visibility: hidden;
+        display: none;
     }
     100% {
         opacity: 100%;
         transform: translateY(0px);
-        visibility: visible;
     }
 }
 .version { /*This formats the version display on the website*/
@@ -72,6 +71,7 @@
     font-family: unbounded;
     font-size: 15px;
     text-align: center;
+    border: 2px solid rgb(19, 19, 19);
     border-radius: 25px;
     transform: translateY(-5px);
     /*animation: enterButtonActive 785ms ease-in-out;*/
@@ -90,6 +90,7 @@
     font-family: unbounded;
     font-size: 15px;
     text-align: center;
+    border: 2px solid rgb(19, 19, 19);
     border-radius: 25px;
     transition-duration: 0.07s;
     animation: enterButton 785ms ease-in-out;
@@ -148,7 +149,7 @@
     animation: moveDown 250ms 50ms ease-in-out forwards;
  }
  .contentHide {
-    visibility: hidden;
+    display: none;
  }
  .showProjectsContent {
     width: 1260px;
