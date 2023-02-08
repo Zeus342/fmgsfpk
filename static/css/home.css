@@ -64,14 +64,14 @@
     animation: enterHeader 1000ms;
 }
 .activeButton { /*This drives the activated button corrosponding to the page we are on*/
-    background-color: white;
-    color: rgb(26, 26, 26);
-    border-color: rgb(19, 19, 19);
+    background-color: rgb(56, 149, 255);
+    color: rgb(255, 255, 255);
+    border-color: rgb(56, 149, 255);
     padding: 5px 10px;
     font-family: unbounded;
     font-size: 15px;
     text-align: center;
-    border: 2px solid rgb(19, 19, 19);
+    border: 2px solid rgb(56, 149, 255);
     border-radius: 25px;
     transform: translateY(-5px);
     /*animation: enterButtonActive 785ms ease-in-out;*/
@@ -97,8 +97,9 @@
     transition: transform 70ms 50ms ease-in-out;
 }
 .navButton:hover {
-    color: rgb(26, 26, 26);
-    background-color: white;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(56, 149, 255);
+    background-color: rgb(56, 149, 255);
     transform: translateY(-5px);
     cursor: pointer;
 } 
@@ -158,6 +159,7 @@
     animation: showContent 250ms 120ms ease-in-out forwards;
  }
  .showUnserProjektContent {
+    width: 1650px;
     margin: auto;
     opacity: 0%;
     animation: showContent 250ms 120ms ease-in-out forwards;
@@ -182,7 +184,7 @@
 .gallery img {
     width: 100%;
     height: auto;
-    border-bottom: 2px inset rgb(19, 19, 19);
+    border-bottom: 2px solid rgb(19, 19, 19);
     transition: border 70ms 50ms ease-in-out;
 }
 .galleryHeader {
@@ -203,16 +205,44 @@
     overflow: hidden;
     white-space: nowrap;
 }
+.unserProjektGridOuter {
+    display: grid;
+    display: flex;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: 20px;
+    margin: 2px;
+    gap: 25px;    
+}
+.unserProjektGridInner {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20px;
+    margin: 2px;
+    gap: 25px;
+    border: solid 2px black;
+    border-radius: 20px;
+    background-color: rgb(216, 236, 255)
+}
 .unserProjektHeader {
     color: rgb(19, 19, 19);
     font-family: unbounded;
-    font-size: 15px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 15px;
 }
 .unserProjektDesc {
     color: rgb(19, 19, 19);
     font-family: unbounded;
-    font-size: 12px;
-    text-align: center;
+    font-size: 15px;
+    line-height: 22px;
+    padding-left: 5px;
+    margin: 10px;
+    width: 700px;
+}
+.unserProjektDescTextBox {
+    border: 2px solid rgb(19, 19, 19);
+    margin: 10px;
+    border-radius: 15px;
+    background-color: white;
 }
