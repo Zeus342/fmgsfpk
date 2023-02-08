@@ -177,11 +177,7 @@
  }
  .showUnserProjektContent {
     width: 1260px;
-<<<<<<< Updated upstream
     margin: 0 auto;
-=======
-    margin: auto;
->>>>>>> Stashed changes
     opacity: 0%;
     animation: showContent 250ms 120ms ease-in-out forwards;
  }
