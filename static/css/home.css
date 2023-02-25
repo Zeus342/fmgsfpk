@@ -105,25 +105,18 @@
 } 
 .navButton:active {
     transform: scale(0.95);
-} 
-.centerHV { /*This centers Horizontal and Vertical*/
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-48%, -60%);
 }
-.centerV { /*This centers Vertical*/
+.centerHeader { /*This centers Header Horizontal and Vertical*/
     margin: 0;
-    position: absolute;
-    left: 50%;
-    transform: translate(-48%, -60%);
-}
-.centerH { /*This centers Horizontal*/
-    margin: 0;
-    position: absolute;
+    position: relative;
+    left: 10%;
     top: 50%;
-    transform: translate(-48%, -60%);
+}
+.centerButtons { /*This centers Buttons Horizontal and Vertical*/
+    margin: 0;
+    position: relative;
+    left: 10%;
+    top: 54%;
 }
 .footer {
     position: fixed;
@@ -164,6 +157,7 @@
     opacity: 0%;
     animation: showContent 250ms 120ms ease-in-out forwards;
  }
+ 
  .gallery {
     margin: 5px;
     border: 2px inset rgb(19, 19, 19);
@@ -235,9 +229,8 @@
     color: rgb(19, 19, 19);
     font-family: unbounded;
     font-size: 15px;
-    line-height: 22px;
     padding-left: 5px;
-    margin: 10px;
+    margin: 5px;
     width: 700px;
 }
 .unserProjektDescTextBox {

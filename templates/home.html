@@ -8,7 +8,7 @@
     <title>DEINPROJEKT</title>
 </head>
 <body onload="atHome()">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div id="version">
         <span style="display: inline-flex;">
             <p class="version" style="font-family:unbounded;">website v.pre1.6</p>
@@ -20,16 +20,16 @@
     <br>
     <div>
         <div>
-            <span id="header" class="centerHV">
-                <div style="margin-bottom: 60px;">
+            <span id="header" class="centerHeader">
+                <div>
                     <h1 class="projectHeader"><span style="font-family:unbounded">DEIN PROJEKT</span></h1>
                 </div>
             </span>
         </div>
-    
+
         <div>
-            <span id="buttons" class="centerHV">
-                <div style="margin-top: 60px;">
+            <span id="buttons" class="centerButtons">
+                <div>
                     <button id="homeButton" class="navButton" onclick="makeHomeActiveButton(), hideProjectsContent(), hideUnserProjektContent()">Home</button>
                     <button id="projectsButton" class="navButton" onclick="makeProjectsActiveButton(), showProjectsContent()">Projekte</button>
                     <button id="unserProjektButton" class="navButton" onclick="makeUnserProjektActiveButton(), showUnserProjektContent()">Unser Projekt</button>
@@ -121,16 +121,20 @@
                 <p class="unserProjektHeader">Roadmap</p>
                 <div class="unserProjektDescTextBox">
                     <h1 class="unserProjektHeader">In Arbeit</h1>
-                    <p class="unserProjektDesc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <dl>
+                        <dt class="unserProjektDesc">Januar</dt>
+                        <dd class="unserProjektDesc" style="margin-bottom: 10px;">- Das aufnehmen von Infos ueber die Projekte von unseren Mitschuelern.</dd>
+                        <dt class="unserProjektDesc">Milk</dt>
+                        <dd class="unserProjektDesc">- white cold drink</dd>
+                    </dl>
                     <br>
-                    <h1 class="unserProjektHeader">In naher Zukunft</h1>
+                    <h1 class="unserProjektHeader">Februar</h1>
                     <p class="unserProjektDesc">At vero eos et accusam
                         et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
                         et dolore magna aliquyam erat, sed diam voluptua.</p>
                     <br>
-                    <h1 class="unserProjektHeader">In ferner Zukunft</h1>
+                    <h1 class="unserProjektHeader">Vollendete Website</h1>
                     <p class="unserProjektDesc"> At vero eos et accusam et justo duo dolores et ea rebum.
                         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                 </div>

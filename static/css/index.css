@@ -1,0 +1,298 @@
+@keyframes moveIn {
+
+    0% {
+        transform: translate(70%, 35%);
+        display: none;
+        visibility: hidden;
+        opacity: 0%;
+    }
+    100% {
+        transform: translate(-50%, 35%);
+        display: block;
+        opacity: 100%;
+    }
+}
+@keyframes moveOut {
+
+    0% {
+        transform: translate(-50%, 35%);
+        display: block;
+        opacity: 100%;
+    }
+    100% {
+        transform: translate(-170%, 35%);
+        display: none;
+        visibility:hidden;
+        opacity: 0%;
+    }
+}
+.version { /*This formats the version display on the website*/
+    color: rgb(26, 26, 26);
+    opacity: 20%;
+    font-size: 10px;
+}
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+html {
+    font-family:unbounded;
+}
+/* For mobile phones: */
+@media only screen and (min-width: 250px) {
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+.projects-gallery-gridS {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    border: solid black 2px;
+}
+.projects-galleryS {
+    margin: 5px;
+    border: 2px solid rgb(19, 19, 19);
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 275px;
+    transition: transform 150ms 50ms ease-in-out;
+    overflow: hidden;
+    border-radius: 10px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+/* For tablets: */
+.col-t-1 {width: 8.33%;}
+.col-t-2 {width: 16.66%;}
+.col-t-3 {width: 25%;}
+.col-t-4 {width: 33.33%;}
+.col-t-5 {width: 41.66%;}
+.col-t-6 {width: 50%;}
+.col-t-7 {width: 58.33%;}
+.col-t-8 {width: 66.66%;}
+.col-t-9 {width: 75%;}
+.col-t-10 {width: 83.33%;}
+.col-t-11 {width: 91.66%;}
+.col-t-12 {width: 100%;}
+.projects-gallery-gridT {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    border: solid black 2px;
+}
+.projects-galleryT {
+    margin: 5px;
+    border: 2px solid rgb(19, 19, 19);
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 275px;
+    transition: transform 150ms 50ms ease-in-out;
+    overflow: hidden;
+    border-radius: 10px;
+}
+}
+@media only screen and (min-width: 1000px) {
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.projects-gallery-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    border: solid black 2px;
+}
+.projects-gallery {
+    margin: 5px;
+    border: 2px solid rgb(19, 19, 19);
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 275px;
+    transition: transform 150ms 50ms ease-in-out;
+    overflow: hidden;
+    border-radius: 10px;
+}
+}
+.hidden {
+    display: none;
+}
+.header {
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 1px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.projects-gallery:hover {
+    transform: scale(1.02);
+}
+.projects-gallery:active {
+    transform: scale(1);
+}
+.projects-gallery img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid rgb(19, 19, 19);
+    transition: border 70ms 50ms ease-in-out;
+}
+.projects-galleryHeader {
+    color: rgb(19, 19, 19);
+    text-align: left;
+    font-family: unbounded;
+    font-size: 15px;
+    margin: 5px;
+}
+.projects-galleryDesc {
+    color: rgb(19, 19, 19);
+    text-align: left;
+    font-family: unbounded;
+    font-size: 12px;
+    display: block;
+    margin: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.footer-grid {
+    background-color: rgb(26, 26, 26);
+    color: white;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    font-size: 12px;
+    padding: 4px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.footer-item {
+    text-align: center;
+    border: solid black 2;
+}
+.moveIn {
+    animation: moveIn 200ms 0ms ease-in-out forwards;
+}
+.moveOut {
+    animation: moveOut 200ms 0ms ease-in-out forwards;
+}
+.centerButtons {
+    border: solid black 2px;
+    width: max-content;
+    margin: 0;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 35%);
+    z-index: 1;
+}
+.centerBackButton {
+    border: solid black 2px;
+    width: max-content;
+    margin: 0;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 35%);
+    z-index: 1;
+}
+.backButton { /*This drives the normal buttons*/
+    background-color: rgb(235, 46, 46);
+    border: 2px solid rgb(235, 46, 46);
+    color: white;
+    padding: 5px 10px;
+    font-family: unbounded;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 25px;
+    transition-duration: 0.07s;
+    animation: enterButton 785ms ease-in-out;
+    transition: transform 70ms 50ms ease-in-out;
+}
+.backButton:hover {
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(235, 46, 46);
+    background-color: rgb(235, 46, 46);
+    transform: scale(1.06, 1.06);
+    cursor: pointer;
+} 
+.backButton:active {
+    transform: scale(0.95);
+}
+.navButton { /*This drives the normal buttons*/
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 5px 10px;
+    font-family: unbounded;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid rgb(26, 26, 26);
+    border-radius: 25px;
+    transition-duration: 0.07s;
+    animation: enterButton 785ms ease-in-out;
+    transition: transform 70ms 50ms ease-in-out;
+}
+.navButton:hover {
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(56, 149, 255);
+    background-color: rgb(56, 149, 255);
+    transform: translateY(-5px);
+    cursor: pointer;
+} 
+.navButton:active {
+    transform: scale(0.95);
+}
+.activeButton { /*This drives the activated button corrosponding to the page we are on*/
+    background-color: rgb(56, 149, 255);
+    color: rgb(255, 255, 255);
+    border-color: rgb(56, 149, 255);
+    padding: 5px 10px;
+    font-family: unbounded;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid rgb(56, 149, 255);
+    border-radius: 25px;
+    transform: translateY(-5px);
+    /*animation: enterButtonActive 785ms ease-in-out;*/
+    transition: transform 70ms 50ms ease-in-out;
+}
+.activeButton:hover {
+    cursor: not-allowed;
+}
+.activeButton:active {
+    transform: scale(0.95);
+}

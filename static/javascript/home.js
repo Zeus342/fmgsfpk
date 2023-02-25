@@ -31,7 +31,7 @@ function makeProjectsActiveButton() {
     document.getElementById("homeButton").className = "navButton";
     document.getElementById("unserProjektButton").className = "navButton";
     document.getElementById("homeButton").disabled = false;
-    document.getElementById("header").className = "moveUp";
+    document.getElementById("header").classList = "moveUp";
     document.getElementById("buttons").className = "moveUp";
 
 }
@@ -40,8 +40,8 @@ function makeUnserProjektActiveButton() {
     document.getElementById("homeButton").className = "navButton";
     document.getElementById("projectsButton").className = "navButton";
     document.getElementById("homeButton").disabled = false;
-    document.getElementById("header").className = "moveUp";
-    document.getElementById("buttons").className = "moveUp";
+    document.getElementById("header").classList.add("moveUp");
+    document.getElementById("buttons").classList.add("moveUp");
 }
 
 function showProjectsContent() {
