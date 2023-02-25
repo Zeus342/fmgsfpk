@@ -146,14 +146,17 @@
     display: none;
  }
  .showProjectsContent {
-    width: 1260px;
+    width: 100%;
     margin: auto;
+    margin-top: 65px;
+    border: solid black 2px;
     opacity: 0%;
     animation: showContent 250ms 120ms ease-in-out forwards;
  }
  .showUnserProjektContent {
-    width: 1650px;
+    width: 100%;
     margin: auto;
+    margin-top: 65px;
     opacity: 0%;
     animation: showContent 250ms 120ms ease-in-out forwards;
  }
@@ -162,7 +165,6 @@
     margin: 5px;
     border: 2px inset rgb(19, 19, 19);
     background-color: rgb(255, 255, 255);
-    float: left;
     width: 300px;
     height: 275px;
     transition: transform 150ms 50ms ease-in-out;
@@ -178,6 +180,7 @@
 .gallery img {
     width: 100%;
     height: auto;
+    display: block;
     border-bottom: 2px solid rgb(19, 19, 19);
     transition: border 70ms 50ms ease-in-out;
 }
@@ -199,24 +202,17 @@
     overflow: hidden;
     white-space: nowrap;
 }
-.unserProjektGridOuter {
+.unserProjektGrid {
     display: grid;
-    display: flex;
     justify-content: center;
-    grid-template-columns: auto auto;
-    grid-template-rows: 20px;
-    margin: 2px;
-    gap: 25px;    
-}
-.unserProjektGridInner {
-    display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 20px;
-    margin: 2px;
-    gap: 25px;
-    border: solid 2px black;
-    border-radius: 20px;
-    background-color: rgb(216, 236, 255)
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 25px;    
+    background-color: rgb(183, 217, 255);
+    border: solid 2px rgb(19, 19, 19);
+    border-radius: 10px;
 }
 .unserProjektHeader {
     color: rgb(19, 19, 19);
@@ -235,7 +231,7 @@
 }
 .unserProjektDescTextBox {
     border: 2px solid rgb(19, 19, 19);
-    margin: 10px;
+    margin: 15px;
     border-radius: 15px;
     background-color: white;
 }
