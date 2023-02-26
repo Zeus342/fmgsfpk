@@ -26,6 +26,12 @@
         opacity: 0%;
     }
 }
+.txtHead {
+    color: rgb(26, 26, 26);
+}
+.txtPara {
+    color: rgb(26, 26, 26);
+}
 .version { /*This formats the version display on the website*/
     color: rgb(26, 26, 26);
     opacity: 20%;
@@ -191,20 +197,22 @@ html {
     white-space: nowrap;
 }
 .footer-grid {
-    background-color: rgb(26, 26, 26);
-    color: white;
+    background-color: rgba(19, 19, 19, 0);
+    color: rgb(19, 19, 19);
     display: grid;
     grid-template-columns: 20% 60% 20%;
+    gap: 2px;
     font-size: 12px;
-    padding: 4px;
+    padding: 2px;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
 }
 .footer-item {
+    border: 2px solid rgb(19, 19, 19);
+    border-radius: 10px;
     text-align: center;
-    border: solid black 2;
 }
 .moveIn {
     animation: moveIn 200ms 0ms ease-in-out forwards;
@@ -213,7 +221,6 @@ html {
     animation: moveOut 200ms 0ms ease-in-out forwards;
 }
 .centerButtons {
-    border: solid black 2px;
     width: max-content;
     margin: 0;
     position: fixed;
@@ -222,7 +229,6 @@ html {
     z-index: 1;
 }
 .centerBackButton {
-    border: solid black 2px;
     width: max-content;
     margin: 0;
     position: fixed;
