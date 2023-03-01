@@ -197,8 +197,8 @@ html {
     white-space: nowrap;
 }
 .footer-grid {
-    background-color: rgba(19, 19, 19, 0);
-    color: rgb(19, 19, 19);
+    background: rgb(255, 255, 255);
+    color: rgba(19, 19, 19, 0.082);
     display: grid;
     grid-template-columns: 20% 60% 20%;
     gap: 2px;
@@ -210,8 +210,8 @@ html {
     width: 100%;
 }
 .footer-item {
-    border: 2px solid rgb(19, 19, 19);
-    border-radius: 10px;
+    padding-top: 5px;
+    background-color: rgba(19, 19, 19, 0);
     text-align: center;
 }
 .moveIn {
