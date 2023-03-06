@@ -20,6 +20,7 @@ function makeProjekteActiveButton() {
     document.getElementById("pxButtons").classList.add("moveIn");
     document.getElementById("pxButtons").classList.remove("moveOut");
     document.getElementById("selectProjektkursPromt").classList.remove("hidden");
+    document.getElementById("unserProjekt").classList.add("hidden");
 
     if (unserProjektButtonClass === "activeButton");
     document.getElementById("unserProjektButton").className = "navButton";
@@ -37,6 +38,7 @@ function backButton() {
     document.getElementById("pxbcProjekte").classList.add("hidden");
     document.getElementById("pxkureProjekte").classList.add("hidden");
     document.getElementById("pxgepProjekte").classList.add("hidden");
+    document.getElementById("unserProjekt").classList.remove("hidden");
 
     if (projekteButtonClass === "activeButton");
         document.getElementById("menuButtons").classList.add("moveIn");
