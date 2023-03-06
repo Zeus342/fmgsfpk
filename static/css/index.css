@@ -125,7 +125,7 @@ html {
     border-radius: 10px;
 }
 .footer-itemT {
-    font-size: 1.12vw;
+    font-size: 1vw;
     background-color: rgba(19, 19, 19, 0);
     text-align: center;
 }
@@ -162,7 +162,7 @@ html {
     border-radius: 10px;
 }
 .footer-item {
-    font-size: 0.92vw;
+    font-size: 10px;
     background-color: rgba(19, 19, 19, 0);
     text-align: center;
 }
