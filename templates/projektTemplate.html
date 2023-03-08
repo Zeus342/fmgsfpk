@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unbounded">
+    <script src="/static/javascript/index.js"></script>
+    <title>THECREATIVECORNER</title>
+</head>
+<body onload="atHome()">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <div id="version">
+        <span style="display: inline-flex;">
+            <p class="version">website v.pre1.6</p>
+            <a href="https://www.linode.com">
+                <img src="/static/assets/linode.png" width="36" height="12" style="padding-top: 12px; padding-left: 7px; opacity: 20%;">
+            </a>
+        </span>
+    </div>
+
+    <div>
+
+        <div class="header">
+            <h1>ProjektIdeen</h1>
+        </div>
+
+        <div id="buttons" class="col-12 col-t-12 col-s-12" style="border: solid black 2px;">
+            <div id="pxButtons" class="centerButtons hidden moveIn">
+                <button id="backButton" class="backButton" onclick="backButton()">BACK</button>
+                <button id="pxm" class="navButton" onclick="showPxmProjekte()">PX M1</button>
+                <button id="pxbc" class="navButton" onclick="showPxbcProjekte()">PX BC1</button>
+                <button id="pxkure" class="navButton" onclick="showPxkureProjekte()">PX KuRe</button>
+                <button id="pxgep" class="navButton" onclick="showPxgepProjekte()">PX GEP</button>
+            </div>
+            <div id="menuButtons" class="centerButtons">
+                <button id="unserProjektButton" class="navButton" onclick="makeUnserProjektActiveButton()">Unser Projekt</button>
+                <button id="projekteButton" class="navButton" onclick="makeProjekteActiveButton()">Projekte</button>
+            </div>
+        </div>
+
+        <div class="col-12 col-t-12 col-s-12">
+            <div class="footer-grid">
+                <div class="footer-item"></div>
+                <div class="footer-item footer-itemS footer-itemT">
+                    <p>Ein Projekt aus dem Projektkurs Mathe der Gesamtschule Fröndenberg</p>
+                    <a href="https://www.linode.com">
+                    <p style="opacity: 20%;">website v.pre2.0</p></a>
+                </div>
+                <div class="footer-item" style="display: inline-flex;"></div>
+            </div> 
+        </div>
+        
+    </div>
+    
+</body>
+</html>
