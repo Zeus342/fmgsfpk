@@ -1,4 +1,4 @@
-@keyframes moveIn {
+@keyframes moveInButtons {
 
     0% {
         transform: translate(70%, 35%);
@@ -12,7 +12,7 @@
         opacity: 100%;
     }
 }
-@keyframes moveOut {
+@keyframes moveOutButtons {
 
     0% {
         transform: translate(-50%, 35%);
@@ -22,7 +22,34 @@
     100% {
         transform: translate(-170%, 35%);
         display: none;
-        visibility:hidden;
+        visibility: hidden;
+        opacity: 0%;
+    }
+}
+@keyframes moveInUpWebsiteContent {
+
+    0% {
+        transform: translate(0%, 10%);
+        display: none;
+        visibility: hidden;
+        opacity: 0%;
+    }
+    100% {
+        display: block;
+        opacity: 100%;
+    }
+}
+@keyframes moveOutDownWebsiteContent {
+
+    0% {
+        transform: translate(0%, 0%);
+        display: block;
+        opacity: 100%;
+    }
+    100% {
+        transform: translate(0%, -10%);
+        display: none;
+        visibility: hidden;
         opacity: 0%;
     }
 }
@@ -184,6 +211,16 @@ html {
     top: 0;
     z-index: 1;
 }
+.displayBox {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px black;
+    padding: 2px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgb(206, 206, 206);
+}
+.textAlign { /*aligns text in the displayBox*/
+    padding-left: 9px;
+}
 .projects-gallery:hover {
     transform: scale(1.02);
 }
@@ -227,11 +264,17 @@ html {
     bottom: 0;
     width: 100%;
 }
-.moveIn {
-    animation: moveIn 200ms 0ms ease-in-out forwards;
+.moveInButtons {
+    animation: moveInButtons 200ms 0ms ease-in-out forwards;
 }
-.moveOut {
-    animation: moveOut 200ms 0ms ease-in-out forwards;
+.moveOutButtons {
+    animation: moveOutButtons 200ms 0ms ease-in-out forwards;
+}
+.moveInUpWebsiteContent {
+    animation: moveInUpWebsiteContent 200ms 0ms ease-in-out forwards;
+}
+.moveOutDownWebsiteContent {
+    animation: moveOutDownWebsiteContent 200ms 0ms ease-in-out forwards;
 }
 .centerButtons {
     width: max-content;
