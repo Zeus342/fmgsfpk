@@ -170,8 +170,11 @@ html {
 .hidden {
     display: none;
 }
+.headerFont {
+    color: rgba(19, 19, 19);
+}
 .header {
-    background-color: rgb(26, 26, 26);
+    background: rgb(255,255,255);
     color: white;
     padding: 1px;
     width: 100%;
@@ -286,7 +289,7 @@ html {
     color: rgb(255, 255, 255);
     border: 2px solid rgb(56, 149, 255);
     background-color: rgb(56, 149, 255);
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     cursor: pointer;
 } 
 .navButton:active {
@@ -302,7 +305,7 @@ html {
     text-align: center;
     border: 2px solid rgb(56, 149, 255);
     border-radius: 25px;
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     /*animation: enterButtonActive 785ms ease-in-out;*/
     transition: transform 70ms 50ms ease-in-out;
 }

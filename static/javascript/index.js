@@ -91,12 +91,15 @@ function showPxgepProjekte() {
     document.getElementById("selectProjektkursPromt").classList.add("hidden");
     document.getElementById("pxgepProjekte").classList.remove("hidden");
 }
-    
-function loadTest() {
-    var testBoxHigh = document.getElementById('testBoxHigh');
-    var url = new URL("http://127.0.0.1:5000/projektTemplate.html"); testBoxHigh.innerHTML=url;
-    var testBoxLow = document.getElementById('testBoxLow');
 
-    url.searchParams.set('load', 'liam');
+function passTest1() {
+    var url = new URL("http://127.0.0.1:5000/projekte.html");
+    url.searchParams.set('load', 'test1');
+    document.location.href = url;
+}
+
+function passTest2() {
+    var url = new URL("http://127.0.0.1:5000/projekte.html");
+    url.searchParams.set('load', 'test2');
     document.location.href = url;
 }
