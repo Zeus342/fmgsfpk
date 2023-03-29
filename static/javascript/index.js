@@ -1,5 +1,11 @@
 var unserProjektButtonClass = document.getElementById("unserProjektButton").className
 var projekteButtonClass = document.getElementById("projekteButton").className
+var pxmButtonClass = document.getElementById("pxm").className
+var pxbcButtonClass = document.getElementById("pxbc").className
+var pxkureButtonClass = document.getElementById("pxkure").className
+var pxgepButtonClass = document.getElementById("pxgep").className
+
+
 
 function atHome() {
     document.getElementById("unserProjektButton").className = "activeButton";
