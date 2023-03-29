@@ -1,26 +1,26 @@
 @keyframes moveInButtons {
 
     0% {
-        transform: translate(70%, 35%);
+        position: absolute;
         display: none;
         visibility: hidden;
         opacity: 0%;
     }
     100% {
-        transform: translate(-50%, 35%);
         display: block;
+        position: absolute;
         opacity: 100%;
     }
 }
 @keyframes moveOutButtons {
 
     0% {
-        transform: translate(-50%, 35%);
         display: block;
+        position: absolute;
         opacity: 100%;
     }
     100% {
-        transform: translate(-170%, 35%);
+        position: absolute;
         display: none;
         visibility: hidden;
         opacity: 0%;
@@ -81,6 +81,7 @@
 
 html {
     font-family:unbounded;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 /* For mobile phones: */
 @media only screen and (min-width: 250px) {
@@ -200,17 +201,6 @@ html {
 .headerFont {
     color: rgba(19, 19, 19);
 }
-.header {
-    background: rgb(255,255,255);
-    color: white;
-    padding: 1px;
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1;
-}
 .displayBox {
     background-color: rgb(255, 255, 255);
     box-shadow: 2px black;
@@ -280,16 +270,16 @@ html {
 .centerButtons {
     width: max-content;
     margin: 0;
-    position: fixed;
+    position: absolute;
     left: 50%;
-    transform: translate(-50%, 35%);
+    transform: translate(-50%, 0%);
     z-index: 1;
 }
 .centerBackButton {
     width: max-content;
     margin: 0;
-    position: fixed;
-    left: 50%;
+    position: absolute;
+    left: 25%;
     transform: translate(-50%, 35%);
     z-index: 1;
 }

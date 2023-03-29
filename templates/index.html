@@ -10,32 +10,24 @@
 <body onload="atHome()">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div id="version">
-        <span style="display: inline-flex;">
-            <p class="version">website v.pre1.6</p>
-            <a href="https://www.linode.com">
-                <img src="/static/assets/linode.png" width="36" height="12" style="padding-top: 12px; padding-left: 7px; opacity: 20%;">
-            </a>
-        </span>
-    </div>
-
     <div>
-
-        <div class="header">
-            <h1 class="headerFont">Dein Projekt</h1>
-        </div>
-
-        <div id="buttons" class="col-12 col-t-12 col-s-12" style="border: solid black 2px;">
-            <div id="pxButtons" class="centerButtons hidden">
-                <button id="backButton" class="backButton" onclick="backButton()">BACK</button>
-                <button id="pxm" class="navButton" onclick="showPxmProjekte()">PX M1</button>
-                <button id="pxbc" class="navButton" onclick="showPxbcProjekte()">PX BC1</button>
-                <button id="pxkure" class="navButton" onclick="showPxkureProjekte()">PX KuRe</button>
-                <button id="pxgep" class="navButton" onclick="showPxgepProjekte()">PX GEP</button>
+        <div id="mainDisplay" class="col-12 col-t-12 col-s-12">
+            <div class="col-12 col-t-12 col-s-12">
+                <h1 class="headerFont">Dein Projekt</h1>
             </div>
-            <div id="menuButtons" class="centerButtons">
-                <button id="unserProjektButton" class="navButton" onclick="makeUnserProjektActiveButton()">Unser Projekt</button>
-                <button id="projekteButton" class="navButton" onclick="makeProjekteActiveButton()">Projekte</button>
+    
+            <div id="buttons" class="col-12 col-t-12 col-s-12" style="border: solid black 2px; padding-bottom: 65px;">
+                <div id="pxButtons" class="col-11 col-t-11 col-s-11 hidden" style="border: solid black 2px;">
+                    <button id="backButton" class="backButton" onclick="backButton()">BACK</button>
+                    <button id="pxm" class="navButton" onclick="showPxmProjekte()">PX M1</button>
+                    <button id="pxbc" class="navButton" onclick="showPxbcProjekte()">PX BC1</button>
+                    <button id="pxkure" class="navButton" onclick="showPxkureProjekte()">PX KuRe</button>
+                    <button id="pxgep" class="navButton" onclick="showPxgepProjekte()">PX GEP</button>    
+                </div>
+                <div id="menuButtons" class="col-11 col-t-11 col-s-11 moveInButtons" style="border: solid black 2px;">
+                    <button id="unserProjektButton" class="navButton" onclick="makeUnserProjektActiveButton()">Unser Projekt</button>
+                    <button id="projekteButton" class="navButton" onclick="makeProjekteActiveButton()">Projekte</button>
+                </div>
             </div>
         </div>
 
@@ -43,7 +35,7 @@
             <p style="color: rgb(161, 161, 161);; text-align: center; font-size: 17px;">Bitte Projektkurs Auswählen!</p>
         </div>
 
-        <div id="unserProjekt" class="col-12 col-t-12 col-s-12" style="padding-top: 15%; padding-bottom: 50px;">
+        <div id="unserProjekt" class="col-12 col-t-12 col-s-12" style="padding-top: 5%; padding-bottom: 50px;">
             <div class="col-4 col-t-4 col-s-12" style="border: solid black 2px;">
                 <div class="displayBox textAlign">
                     <h1>Roadmap</h1>
@@ -178,16 +170,6 @@
                     <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-12 col-t-12 col-s-12">
-            <div class="footer-grid">
-                <div class="footer-item"></div>
-                <div class="footer-item footer-itemS footer-itemT">
-                    <p>Ein Projekt aus dem Projektkurs Mathe der Gesamtschule Fröndenberg</p>
-                </div>
-                <div class="footer-item" style="display: inline-flex;"></div>
-            </div> 
         </div>
         
     </div>
