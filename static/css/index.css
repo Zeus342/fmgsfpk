@@ -80,8 +80,13 @@
 }
 
 html {
-    font-family:unbounded;
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    font-family:poppins;
+    font-weight: 500;
+    background-color:rgb(56, 149, 255);
+}
+button {
+    font-family:poppins;
+    font-weight: 500;
 }
 /* For mobile phones: */
 @media only screen and (min-width: 250px) {
@@ -200,9 +205,9 @@ html {
 }
 .displayBox {
     background-color: rgb(255, 255, 255);
-    padding: 2px;
+    margin: 7px;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px rgb(214, 214, 214);
+    box-shadow: 0px 0px 15px rgb(55, 55, 55);
 }
 .textAlign { /*aligns text in the displayBox*/
     padding-left: 9px;
@@ -223,14 +228,12 @@ html {
 .projects-galleryHeader {
     color: rgb(19, 19, 19);
     text-align: left;
-    font-family: unbounded;
     font-size: 15px;
     margin: 5px;
 }
 .projects-galleryDesc {
     color: rgb(19, 19, 19);
     text-align: left;
-    font-family: unbounded;
     font-size: 12px;
     display: block;
     margin: 5px;
@@ -284,8 +287,7 @@ html {
     border: 2px solid rgb(235, 46, 46);
     box-shadow: 0px 0px 10px rgb(185, 185, 185);
     color: white;
-    padding: 5px 10px;
-    font-family: unbounded;
+    padding: 3px 10px;
     font-size: 15px;
     text-align: center;
     border-radius: 25px;
@@ -304,14 +306,13 @@ html {
     transform: scale(0.90);
 }
 .navButton { /*This drives the normal buttons*/
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(56, 149, 255);
     box-shadow: 0px 0px 10px rgb(185, 185, 185);
     color: white;
-    padding: 5px 10px;
-    font-family: unbounded;
+    padding: 3px 10px;
     font-size: 15px;
     text-align: center;
-    border: 2px solid rgb(26, 26, 26);
+    border: 2px solid rgb(56, 149, 255);
     border-radius: 25px;
     transition-duration: 0.07s;
     animation: enterButton 785ms ease-in-out;
@@ -319,32 +320,11 @@ html {
 }
 .navButton:hover {
     color: rgb(255, 255, 255);
-    border: 2px solid rgb(56, 149, 255);
-    background-color: rgb(56, 149, 255);
-    transform: translateY(-3px);
+    border: 2px solid rgb(92, 168, 255);
+    background-color: rgb(92, 168, 255);
+    transform: scale(1.03);
     cursor: pointer;
 } 
 .navButton:active {
-    transform: scale(0.90);
-}
-.activeButton { /*This drives the activated button corrosponding to the page we are on*/
-    background-color: rgb(56, 149, 255);
-    color: rgb(255, 255, 255);
-    border-color: rgb(56, 149, 255);
-    box-shadow: 0px 0px 10px rgb(185, 185, 185);
-    padding: 5px 10px;
-    font-family: unbounded;
-    font-size: 15px;
-    text-align: center;
-    border: 2px solid rgb(56, 149, 255);
-    border-radius: 25px;
-    transform: translateY(-3px);
-    /*animation: enterButtonActive 785ms ease-in-out;*/
-    transition: transform 70ms 50ms ease-in-out;
-}
-.activeButton:hover {
-    cursor: not-allowed;
-}
-.activeButton:active {
     transform: scale(0.90);
 }

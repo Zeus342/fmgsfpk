@@ -6,57 +6,20 @@ var pxkureButtonClass = document.getElementById("pxkure").className
 var pxgepButtonClass = document.getElementById("pxgep").className
 
 
-
-function atHome() {
-    document.getElementById("unserProjektButton").className = "activeButton";
+function flaskRedirect() {
+    window.location.href = "https://flask.palletsprojects.com";
 }
 
-function makeUnserProjektActiveButton() {
-    document.getElementById("unserProjektButton").className = "activeButton";
-
-    if (projekteButtonClass === "activeButton");
-        document.getElementById("projekteButton").className ="navButton";
+function linodeRedirect() {
+    window.location.href = "https://www.linode.com/";
 }
 
-function makeProjekteActiveButton() {
-    document.getElementById("projekteButton").className ="activeButton";
-    document.getElementById("menuButtons").classList.add("moveOutButtons");
-    document.getElementById("menuButtons").classList.remove("moveInButtons");
-    document.getElementById("pxButtons").classList.remove("hidden");
-    document.getElementById("pxButtons").classList.add("moveInButtons");
-    document.getElementById("pxButtons").classList.remove("moveOutButtons");
-    document.getElementById("selectProjektkursPromt").classList.remove("hidden");
-    document.getElementById("selectProjektkursPromt").classList.add("moveInUpWebsiteContent");
-    
-
-    if (unserProjektButtonClass === "activeButton");
-        document.getElementById("unserProjektButton").className = "navButton";
-        document.getElementById("unserProjekt").classList.add("hidden");
+function projekteDepress() {
+    document.getElementById("menuBody").classList.add("hidden");
+    document.getElementById("projekteBody").classList.remove("hidden");
 }
 
-function backButton() {
-    document.getElementById("projekteButton").className = "navButton";
-    document.getElementById("pxm").className = "navButton";
-    document.getElementById("pxbc").className = "navButton";
-    document.getElementById("pxkure").className = "navButton";
-    document.getElementById("pxgep").className = "navButton";
-    document.getElementById("unserProjektButton").className = "activeButton";
-    document.getElementById("selectProjektkursPromt").classList.add("hidden");
-    document.getElementById("pxmProjekte").classList.add("hidden");
-    document.getElementById("pxbcProjekte").classList.add("hidden");
-    document.getElementById("pxkureProjekte").classList.add("hidden");
-    document.getElementById("pxgepProjekte").classList.add("hidden");
-    
-    if (projekteButtonClass === "activeButton");
-        document.getElementById("menuButtons").classList.add("moveInButtons");
-        document.getElementById("menuButtons").classList.remove("moveOutButtons");
-        document.getElementById("pxButtons").classList.remove("moveInButtons");
-        document.getElementById("pxButtons").classList.add("moveOutButtons");
-        document.getElementById("unserProjekt").classList.add("moveInUpWebsiteContent");
-        document.getElementById("unserProjekt").classList.remove("moveOutDownWebsiteContent");
-        document.getElementById("unserProjekt").classList.remove("hidden");
 
-}
 
 function showPxmProjekte() {
     document.getElementById("pxbc").classList = "navButton";

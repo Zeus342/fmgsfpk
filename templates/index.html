@@ -3,172 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/static/css/index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unbounded">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <script src="/static/javascript/index.js"></script>
     <title>THECREATIVECORNER</title>
 </head>
-<body onload="atHome()">
+<body onload="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <div>
-        <div id="mainDisplay" class="col-12 col-t-12 col-s-12">
-            <div class="col-12 col-t-12 col-s-12">
-                <h1 class="headerFont">Dein Projekt</h1>
+        <div id="content">
+            <div id="pxButtons" class="hidden" style="border: solid black 2px;">
+                   
             </div>
-    
-            <div id="buttons" class="col-12 col-t-12 col-s-12" style="border: solid black 2px; padding-bottom: 65px;">
-                <div id="pxButtons" class="col-11 col-t-11 col-s-11 hidden" style="border: solid black 2px;">
-                    <button id="backButton" class="backButton" onclick="backButton()">BACK</button>
-                    <button id="pxm" class="navButton" onclick="showPxmProjekte()">PX M1</button>
-                    <button id="pxbc" class="navButton" onclick="showPxbcProjekte()">PX BC1</button>
-                    <button id="pxkure" class="navButton" onclick="showPxkureProjekte()">PX KuRe</button>
-                    <button id="pxgep" class="navButton" onclick="showPxgepProjekte()">PX GEP</button>    
-                </div>
-                <div id="menuButtons" class="col-11 col-t-11 col-s-11 moveInButtons" style="border: solid black 2px;">
-                    <button id="unserProjektButton" class="navButton" onclick="makeUnserProjektActiveButton()">Unser Projekt</button>
-                    <button id="projekteButton" class="navButton" onclick="makeProjekteActiveButton()">Projekte</button>
-                </div>
-            </div>
-        </div>
+            <div id="menuBody" style="padding-top: 7%;">
 
-        <div id="selectProjektkursPromt" class="col-12 col-t-12 col-s-12 hidden" style="padding-top: 20%;">
-            <p style="color: rgb(161, 161, 161);; text-align: center; font-size: 17px;">Bitte Projektkurs Auswählen!</p>
-        </div>
+                <div class="col-2 col-t-2"></div>
 
-        <div id="unserProjekt" class="col-12 col-t-12 col-s-12" style="padding-top: 5%; padding-bottom: 50px;">
-            <div class="col-4 col-t-4 col-s-12" style="border: solid black 2px;">
-                <div class="displayBox textAlign">
-                    <h1>Roadmap</h1>
-                    <p>This is a test This is a test This is a test This is a test This is a test This is a test This is a test</p>
-                </div>   
-            </div>
-            
-            <div class="col-8 col-t-8 col-s-12">
-                <div class="displayBox textAlign">
-                    <h1>Unser Projekt</h1>
-                    <p>This is a test This is a test This is a test This is a test This is a test This is a test This is a test</p>  
+                <div class="displayBox col-8 col-t-8" style="">
+                    <h1>Was ist Tinker?</h1>
+                    <p>Tinker ist ein Projekt aus dem Projektkurs Mathe der Gesamtschule Fröndenberg. Mit 
+                        Tinker wollen wir euch die Projektarbeiten der Schule 
+                        näher bringen und sie für alle Schüler bzw. Eltern zum Anschauen verfügbar machen. 
+                        Tinker kommt aus dem englischen, und bedeutet so viel wie herumbasteln oder 
+                        experimentieren. Tinker soll also das Sammeln und Zusammensetzen von Informationen
+                        für die Projektarbeit ausdrücken.
+                    </p>
+
+                    <button id="projekteButton" class="navButton" onclick="projekteDepress()">Projekte</button>
+                    <br>
+
+                    <h1>Entwicklung von Tinker</h1>
+                    <p>Tinker basiert auf dem Webframework Flask, und wurde mit den Programmiersprachen HTML, 
+                        CSS und Javascript programmiert. Tinker durchlief drei Monate aktive Entwicklung, 
+                        und wurde vom Boden auf von Hand, ohne sämtliche APIs oder Stützen gebaut. 
+                        Die Entwicklung von Tinker verlief zu Beginn holprig, da HTML, CSS und Javascript 
+                        Neuland für die Entwickler waren, auf das Ende zulaufend verlief die Entwicklung 
+                        dann aber fließend. Als Host für die Website benutzen wir Linode, ein Unternehmen 
+                        welches Webspaces für akzeptable Preise vermietet.
+                    </p>
+                    <button class="navButton" style="background-color: rgb(86, 122, 187); border: 2px solid rgb(86, 122, 187);" onclick="flaskRedirect()" >Flask</button>
+                    <button class="navButton" style="background-color: rgb(86, 122, 187); border: 2px solid rgb(86, 122, 187);" onclick="linodeRedirect()" >Linode</button>
                 </div>
+
+                <div class="col-2 col-t-2"></div>
                 
             </div>
-        </div>
-        
-        <div id="pxmProjekte" class="col-12 col-t-12 col-s-12 hidden" style="padding-top: 50px; padding-bottom: 50px;">
-            <div class="projects-gallery-grid projects-gallery-gridT projects-gallery-gridS">
-                <div class="projects-gallery projects-galleryT projects-galleryS" onclick="passTest1()">
-                    <img src="/static/assets/pxm1_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS" onclick="passTest2()">
-                    <img src="/static/assets/pxm1_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxm1_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxm1_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxm1_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-            </div>
-        </div>
 
-        <div id="pxbcProjekte" class="col-12 col-t-12 col-s-12 hidden" style="padding-top: 50px; padding-bottom: 50px;">
-            <div class="projects-gallery-grid projects-gallery-gridT projects-gallery-gridS">
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxbc1_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxbc1_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxbc1_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxbc1_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxbc1_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-            </div>
-        </div>
+            <div id="projekteBody" class="hidden" style="padding-top: 7%;">
 
-        <div id="pxkureProjekte" class="col-12 col-t-12 col-s-12 hidden" style="padding-top: 50px; padding-bottom: 50px;">
-            <div class="projects-gallery-grid projects-gallery-gridT projects-gallery-gridS">
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxkure_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxkure_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxkure_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxkure_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxkure_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-            </div>
-        </div>
+                <div class="col-1 col-t-1 col-s-10"></div>
 
-        <div id="pxgepProjekte" class="col-12 col-t-12 col-s-12 hidden" style="padding-top: 50px; padding-bottom: 50px;">
-            <div class="projects-gallery-grid projects-gallery-gridT projects-gallery-gridS">
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxgep_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
+                <div class="displayBox col-10 col-t-10 col-s-10" style="">
+                    <h1 style="font-size: 20px;">Wähle hier den gewünschten Projektkurs</h1>
+                    <div style="margin: 1px;">
+                        <button id="pxm" class="navButton" onclick="showPxmProjekte()">PX M1</button>
+                        <button id="pxbc" class="navButton" onclick="showPxbcProjekte()">PX BC1</button>
+                        <button id="pxkure" class="navButton" onclick="showPxkureProjekte()">PX KuRe</button>
+                        <button id="pxgep" class="navButton" onclick="showPxgepProjekte()">PX GEP</button>
+                    </div>
                 </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxgep_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxgep_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxgep_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
-                <div class="projects-gallery projects-galleryT projects-galleryS">
-                    <img src="/static/assets/pxgep_image.jpg" alt="projectImageTest"></a>
-                    <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                    <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                </div>
+
+                <div class="col-1 col-t-1 col-s-10"></div>
+                
             </div>
         </div>
         
