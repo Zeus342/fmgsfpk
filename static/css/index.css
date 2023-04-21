@@ -83,6 +83,7 @@ html {
     font-family:poppins;
     font-weight: 500;
     background-color:rgb(56, 149, 255);
+    scroll-behavior: smooth;
 }
 button {
     font-family:poppins;
@@ -113,7 +114,7 @@ button {
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 15px rgb(199, 199, 199);
     width: 300px;
-    height: 275px;
+    height: 390px;
     transition: transform 150ms 50ms ease-in-out, box-shadow 150ms 50ms ease-in-out;
     overflow: hidden;
     border-radius: 10px;
@@ -150,7 +151,7 @@ button {
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 15px rgb(199, 199, 199);
     width: 300px;
-    height: 275px;
+    height: 390px;
     transition: transform 150ms 50ms ease-in-out, box-shadow 150ms 50ms ease-in-out;
     overflow: hidden;
     border-radius: 10px;
@@ -186,7 +187,7 @@ button {
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 15px rgb(199, 199, 199);
     width: 300px;
-    height: 275px;
+    height: 390px;
     transition: transform 150ms 50ms ease-in-out, box-shadow 150ms 50ms ease-in-out;
     overflow: hidden;
     border-radius: 10px;
@@ -196,6 +197,14 @@ button {
     background-color: rgba(19, 19, 19, 0);
     text-align: center;
 }
+}
+.projekteHeader {
+    font-size: 25px;
+    text-align: center;
+}
+.pdfDisplay {
+    margin-top: 8px;
+    box-shadow: 0px 0px 15px rgb(170, 170, 170); 
 }
 .hidden {
     display: none;
@@ -227,9 +236,9 @@ button {
 }
 .projects-galleryHeader {
     color: rgb(19, 19, 19);
-    text-align: left;
     font-size: 15px;
-    margin: 5px;
+    display: inline;
+    margin: 10px;
 }
 .projects-galleryDesc {
     color: rgb(19, 19, 19);

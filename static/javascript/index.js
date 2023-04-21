@@ -19,6 +19,11 @@ function projekteDepress() {
     document.getElementById("projekteBody").classList.remove("hidden");
 }
 
+function back() {
+    document.getElementById("menuBody").classList.remove("hidden");
+    document.getElementById("projekteBody").classList.add("hidden");
+}
+
 
 
 function showPxmProjekte() {

@@ -21,7 +21,7 @@
 
                 <div class="col-2 col-t-2"></div>
 
-                <div class="displayBox col-8 col-t-8" style="">
+                <div class="displayBox col-8 col-t-8">
                     <h1>Was ist Tinker?</h1>
                     <p>Tinker ist ein Projekt aus dem Projektkurs Mathe der Gesamtschule Fröndenberg. Mit 
                         Tinker wollen wir euch die Projektarbeiten der Schule 
@@ -53,49 +53,279 @@
 
             <div id="projekteBody" class="hidden" style="padding-top: 7%;">
 
-                <div class="col-1 col-t-1 col-s-1"></div>
+                <div class="col-1 col-t-1"></div>
 
-                <div class="displayBox col-10 col-t-10 col-s-10" style="">
-                    <h1 style="font-size: 20px;">Wähle hier den gewünschten Projektkurs</h1>
-                    <div style="margin: 1px;">
-                        <button id="pxm" class="navButton" onclick="showPxmProjekte()">PX M1</button>
-                        <button id="pxbc" class="navButton" onclick="showPxbcProjekte()">PX BC1</button>
-                        <button id="pxkure" class="navButton" onclick="showPxkureProjekte()">PX KuRe</button>
-                        <button id="pxgep" class="navButton" onclick="showPxgepProjekte()">PX GEP</button>
+                <div class="displayBox col-10 col-t-10 col-s-12">
+                    <h1 style="font-size: 23px; text-align: center;">Wähle hier den gewünschten Projektkurs</h1>
+                    <div class="centerButtons" style="margin: 1px; display: inline;">
+                        <button id="backButton" class="navButton" style="background-color: rgb(255, 61, 61); border: 2px solid rgb(255, 61, 61);" onclick="back()">Zurück</button>
+                        <a style="text-decoration: none;" href="#mathe">                                   
+                            <button class="navButton">PX M</button>                   
+                        </a>
+                        <a style="text-decoration: none;" href="#geschichtePädagogik">                                   
+                            <button class="navButton">PX GeP</button>                   
+                        </a>
+                        <a style="text-decoration: none;" href="#biochemie">                                   
+                            <button class="navButton">PX Bc</button>                   
+                        </a>
+                        <a style="text-decoration: none;" href="#kunstReligion">                                   
+                            <button class="navButton">PX KuRe</button>                   
+                        </a>
                     </div>
 
-                    <div id="projektDisplay" style="padding-top: 50px; padding-bottom: 50px;">
-                        <div class="projects-gallery-grid projects-gallery-gridT projects-gallery-gridS">
-                            <div class="projects-gallery projects-galleryT projects-galleryS" onclick="passTest1()">
-                                <img src="/static/assets/pxm1_image.jpg" alt="projectImageTest"></a>
-                                <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                                <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
+                    <div id="projektDisplay">
+
+                        <h1 id="mathe" style="padding-top: 50px;" class="projekteHeader">Projektkurs Mathe</h1>
+
+                        <div style="padding-top: 50px; padding-bottom: 50px;">
+                            <div class="projects-gallery-grid projects-gallery-gridT projects-gallery-gridS">
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+    
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS" onclick="passTest2()">
+                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+                                                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+                                                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+                                                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
                             </div>
-                            <div class="projects-gallery projects-galleryT projects-galleryS" onclick="passTest2()">
-                                <img src="/static/assets/pxm1_image.jpg" alt="projectImageTest"></a>
-                                <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                                <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
+                        </div>
+                      
+                        <h1 id="geschichtePädagogik" class="projekteHeader">Projektkurs Geschichte/Pädagogik</h1>
+               
+                        <div style="padding-top: 50px; padding-bottom: 50px;">
+                            <div class="projects-gallery-grid projects-gallery-gridT projects-gallery-gridS">
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+    
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS" onclick="passTest2()">
+                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+                                                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+                                                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+                                                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
                             </div>
-                            <div class="projects-gallery projects-galleryT projects-galleryS">
-                                <img src="/static/assets/pxm1_image.jpg" alt="projectImageTest"></a>
-                                <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                                <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
+                        </div>
+
+                        <h1 id="biochemie" class="projekteHeader">Projektkurs Biochemie</h1>
+               
+                        <div style="padding-top: 50px; padding-bottom: 50px;">
+                            <div class="projects-gallery-grid projects-gallery-gridT projects-gallery-gridS">
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+    
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS" onclick="passTest2()">
+                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+                                                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+                                                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+                                                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
                             </div>
-                            <div class="projects-gallery projects-galleryT projects-galleryS">
-                                <img src="/static/assets/pxm1_image.jpg" alt="projectImageTest"></a>
-                                <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                                <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
-                            </div>
-                            <div class="projects-gallery projects-galleryT projects-galleryS">
-                                <img src="/static/assets/pxm1_image.jpg" alt="projectImageTest"></a>
-                                <div class="projects-galleryHeader">Projekt Ueberschrift</div>
-                                <div class="projects-galleryDesc">Unser Projekt beinhaltet viele dinge wie das gamblen von sachen auf google und youtube hallo das ist seht cool ne?</div>
+                        </div>
+
+                        <h1 id="kunstReligion" class="projekteHeader">Projektkurs Kunst/Religion</h1>
+               
+                        <div style="padding-top: 50px; padding-bottom: 50px;">
+                            <div class="projects-gallery-grid projects-gallery-gridT projects-gallery-gridS">
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+    
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS" onclick="passTest2()">
+                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+                                                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+                                                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
+                                <div class="projects-gallery projects-galleryT projects-galleryS">
+                                                                    
+                                    <div style="margin-top: 8px; margin-bottom: 8px;">
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
+                                    </div>
+                                    <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
+                                
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-1 col-t-1 col-s-1"></div>
+                <div class="col-1 col-t-1"></div>
                 
             </div>
         </div>
