@@ -9,5 +9,5 @@ function pageLoader() {
         document.getElementById("testBoxHigh").innerHTML="Test Projekt 1";
     
     if (load === "test2")
-        document.getElementById("testBoxHigh").innerHTML="Test Projekt 2";
+        document.getElementById("testBoxHigh").innerHTML="Test Projekt 69";
 }
