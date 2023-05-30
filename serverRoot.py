@@ -5,12 +5,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template('index.html')
+    return render_template('franzroehrle.com.html')
 
-@app.route("/projekte.html")
+@app.route("/portfolio")
 def projektTemplate():
-    return render_template('projekte.html')
+    return render_template('portfolio.html')
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=80)
-    app.debug = True
+    app.run(host='0.0.0.0', port=80, ssl_context=('franzroehrle.com.crt', 'franzroehrle.com.key'))
