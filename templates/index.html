@@ -14,17 +14,21 @@
 
     <div>
         <div id="content">
+            <div id="pxButtons" class="hidden" style="border: solid black 2px;">
+                   
+            </div>
             <div id="menuBody" style="padding-top: 7%;">
 
-                <div class="col-1 col-t-1"></div>
+                <div class="col-2 col-t-2"></div>
 
-                <div class="displayBox col-10 col-t-8">
+                <div class="displayBox col-8 col-t-8">
                     <h1>Was ist Tinker?</h1>
                     <p>Tinker ist ein Projekt aus dem Projektkurs Mathe der Gesamtschule Fröndenberg. Mit 
                         Tinker wollen wir euch die Projektarbeiten der Schule 
                         näher bringen und sie für alle Schüler bzw. Eltern zum Anschauen verfügbar machen. 
                         Tinker kommt aus dem englischen, und bedeutet so viel wie herumbasteln oder 
-                        experimentieren.
+                        experimentieren. Tinker soll also das Sammeln und Zusammensetzen von Informationen
+                        für die Projektarbeit ausdrücken.
                     </p>
 
                     <button id="projekteButton" class="navButton" onclick="projekteDepress()">Projekte</button>
@@ -43,7 +47,7 @@
                     <button class="navButton" style="background-color: rgb(86, 122, 187); border: 2px solid rgb(86, 122, 187);" onclick="linodeRedirect()" >Linode</button>
                 </div>
 
-                <div class="col-1 col-t-1"></div>
+                <div class="col-2 col-t-2"></div>
                 
             </div>
 
@@ -77,17 +81,21 @@
                                 <div class="projects-gallery projects-galleryT projects-galleryS">
     
                                     <div style="margin-top: 8px; margin-bottom: 8px;">
-                                        <h1 class="projects-galleryHeader">passTest1</h1>
-                                        <button class="navButton" style="float: right; margin-right: 10px;" onclick="passTest1()">Lesen</button>                   
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
                                     </div>
                                     <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
     
                                 </div>
-                                <div class="projects-gallery projects-galleryT projects-galleryS">
+                                <div class="projects-gallery projects-galleryT projects-galleryS" onclick="passTest2()">
                                     
                                     <div style="margin-top: 8px; margin-bottom: 8px;">
-                                        <h1 class="projects-galleryHeader">passTest2</h1>
-                                        <button class="navButton" style="float: right; margin-right: 10px;" onclick="passTest2()">Lesen</button>                                     
+                                        <h1 class="projects-galleryHeader">Projekt Ueberschrift</h1>
+                                        <a href="/static/projektarbeiten/test/Tinker.pdf">                                   
+                                            <button class="navButton" style="float: right; margin-right: 10px;">Lesen</button>                   
+                                        </a>
                                     </div>
                                     <embed class="pdfDisplay" src="/static/projektarbeiten/test/Tinker.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit&zoom=25"  width="100%" height="87%" />
                                 

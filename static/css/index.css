@@ -119,7 +119,13 @@ button {
     overflow: hidden;
     border-radius: 10px;
 }
+.footer-itemS {
+    font-size: 1.42vw;
+    background-color: rgba(19, 19, 19, 0);
+    text-align: center;
 }
+}
+
 @media only screen and (min-width: 768px) {
 /* For tablets: */
 .col-t-1 {width: 8.33%;}
@@ -149,6 +155,11 @@ button {
     transition: transform 150ms 50ms ease-in-out, box-shadow 150ms 50ms ease-in-out;
     overflow: hidden;
     border-radius: 10px;
+}
+.footer-itemT {
+    font-size: 1vw;
+    background-color: rgba(19, 19, 19, 0);
+    text-align: center;
 }
 }
 @media only screen and (min-width: 1200px) {
@@ -181,6 +192,11 @@ button {
     overflow: hidden;
     border-radius: 10px;
 }
+.footer-item {
+    font-size: 10px;
+    background-color: rgba(19, 19, 19, 0);
+    text-align: center;
+}
 }
 .projekteHeader {
     font-size: 25px;
@@ -193,11 +209,17 @@ button {
 .hidden {
     display: none;
 }
+.headerFont {
+    color: rgba(19, 19, 19);
+}
 .displayBox {
     background-color: rgb(255, 255, 255);
     margin: 7px;
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgb(55, 55, 55);
+}
+.textAlign { /*aligns text in the displayBox*/
+    padding-left: 9px;
 }
 .projects-gallery:hover {
     transform: scale(1.02);
@@ -218,6 +240,41 @@ button {
     display: inline;
     margin: 10px;
 }
+.projects-galleryDesc {
+    color: rgb(19, 19, 19);
+    text-align: left;
+    font-size: 12px;
+    display: block;
+    margin: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.footer-grid {
+    background: rgb(255, 255, 255);
+    color: rgba(19, 19, 19, 0.082);
+    display: grid;
+    grid-template-columns: 13% 74% 13%;
+    gap: 2px;
+    font-size: 12px;
+    padding: 2px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.moveInButtons {
+    animation: moveInButtons 200ms 0ms ease-in-out forwards;
+}
+.moveOutButtons {
+    animation: moveOutButtons 200ms 0ms ease-in-out forwards;
+}
+.moveInUpWebsiteContent {
+    animation: moveInUpWebsiteContent 200ms 0ms ease-in-out forwards;
+}
+.moveOutDownWebsiteContent {
+    animation: moveOutDownWebsiteContent 200ms 0ms ease-in-out forwards;
+}
 .centerButtons {
     width: max-content;
     margin: 0;
@@ -225,6 +282,37 @@ button {
     left: 50%;
     transform: translate(-50%, 0%);
     z-index: 1;
+}
+.centerBackButton {
+    width: max-content;
+    margin: 0;
+    position: absolute;
+    left: 25%;
+    transform: translate(-50%, 35%);
+    z-index: 1;
+}
+.backButton {
+    background-color: rgb(235, 46, 46);
+    border: 2px solid rgb(235, 46, 46);
+    box-shadow: 0px 0px 10px rgb(185, 185, 185);
+    color: white;
+    padding: 3px 10px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 25px;
+    transition-duration: 0.07s;
+    animation: enterButton 785ms ease-in-out;
+    transition: transform 70ms 50ms ease-in-out;
+}
+.backButton:hover {
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(235, 46, 46);
+    background-color: rgb(235, 46, 46);
+    transform: scale(1.03, 1.03);
+    cursor: pointer;
+} 
+.backButton:active {
+    transform: scale(0.90);
 }
 .navButton { /*This drives the normal buttons*/
     background-color: rgb(56, 149, 255);
@@ -240,6 +328,7 @@ button {
     transition: transform 70ms 50ms ease-in-out;
 }
 .navButton:hover {
+    color: rgb(255, 255, 255);
     border: 2px solid rgb(92, 168, 255);
     background-color: rgb(92, 168, 255);
     transform: scale(1.03);
