@@ -16,7 +16,7 @@ function scrollerAnim() {
     document.getElementById("portfolioButton").style.scale = scrolledFastest + "%";
 }
 
-window.addEventListener("scroll", reveal,);
+window.addEventListener("scroll", reveal);
 
 // To check the scroll position on page load
 reveal();

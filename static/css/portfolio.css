@@ -1,3 +1,9 @@
+::selection {
+  background-color: rgb(43, 183, 81);
+}
+* {
+  box-sizing: border-box;
+}
 html {
     font-family: 'Lexend Zetta', sans-serif;
     color: rgb(0, 0, 0);
@@ -7,9 +13,19 @@ html {
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
+body::-webkit-scrollbar{
+  display: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+section::-webkit-scrollbar{
+  display: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 p {
     font-family: 'Space Grotesk', sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 400;
     font-size: 18px;
 }
@@ -24,50 +40,91 @@ button {
     font-weight: 650;
 }
 
-img {
+.content img {
     border-radius: 10px;
 }
 
+/* Center website */
 .main {
-    max-width: 1000px;
-    margin: auto;
+  max-width: 1150px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.date {
+  font-size: 10px;
+  margin: 0;
+}
+
+/* Create three equal columns that floats next to each other */
+
+
+/* Content */
+.content {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px;
+  display: none; /* Hide all elements by default */
+  border-radius: 12px;
+  margin: 7px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 0px) {
+
+  .columnSMALL {
+    float: left;
+    width: 100%;
   }
-  
-  .row {
-    margin: 10px -16px;
+
+} 
+@media only screen and (min-width: 450px) {
+
+  .columnS {
+    float: left;
+    width: 100%;
   }
-  
-  /* Add padding BETWEEN each column */
-  .row,
-  .row > .column {
-    padding: 8px;
+
+} 
+
+@media only screen and (min-width: 767px) {
+
+  .columnT {
+    float: left;
+    width: 50%;
   }
-  
-  /* Create three equal columns that floats next to each other */
+} 
+
+@media only screen and (min-width: 1200px) {
+
   .column {
     float: left;
     width: 33.33%;
-    display: none; /* Hide all elements by default */
   }
-  
-  /* Clear floats after rows */ 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Content */
-  .content {
-    background-color: white;
-    padding: 10px;
-    border-radius: 15px;
-  }
-  
-  /* The "show" class is added to the filtered elements */
-  .show {
-    display: block;
-  }
+
+}
+
+.info {
+  position: absolute;
+  left: 1rem;
+  top: -0.1rem;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 35px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  text-align: left;
+  z-index: 2;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
   
   /* Style the buttons */
   .btn {
@@ -76,16 +133,61 @@ img {
     margin-right: 2px;
     margin-bottom: 10px;
     padding: 12px 16px;
-    border-radius: 15px;
-    background-color: white;
+    border-radius: 5px;
+    background-color: rgb(19, 19, 19);
+    color: rgb(255, 255, 255);
     cursor: pointer;
+    
   }
   
   .btn:hover {
-    background-color: #ddd;
+    background-color: rgb(80, 80, 80);
   }
   
-  .btn.active {
-    background-color: #666;
-    color: white;
+  .btn:active {
+    background-color: rgb(43, 183, 81);
   }
+
+  .toTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    opacity: 0;
+    border: none;
+    outline: none;
+    background-color: rgb(43, 183, 81);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+  
+  .toTopBtn:hover {
+    background-color: rgb(28, 133, 56);
+  }
+
+
+
+
+.items .item{
+  background:#f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+  border:solid 1px #aaa;
+  display:inline-block;
+  width: 31%;
+  margin:1%;
+}
+
+.items .item .item-title{
+  font-size: 20pt;
+  font-weight:bold;
+  letter-spacing: -1px;
+}
+
+.items .item .item-image{
+  width: 100%;
+}
