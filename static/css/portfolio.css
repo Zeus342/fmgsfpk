@@ -40,9 +40,6 @@ button {
     font-weight: 650;
 }
 
-.content img {
-    border-radius: 10px;
-}
 
 /* Center website */
 .main {
@@ -51,23 +48,6 @@ button {
   padding-top: 50px;
 }
 
-.date {
-  font-size: 10px;
-  margin: 0;
-}
-
-/* Create three equal columns that floats next to each other */
-
-
-/* Content */
-.content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 5px;
-  display: none; /* Hide all elements by default */
-  border-radius: 12px;
-  margin: 7px;
-  margin-bottom: 15px;
-}
 
 @media only screen and (min-width: 0px) {
 
@@ -96,9 +76,10 @@ button {
 
 @media only screen and (min-width: 1200px) {
 
-  .column {
-    float: left;
+  .gallery {
     width: 33.33%;
+    display: grid;
+    grid-template-columns: 100% 100% 100%;
   }
 
 }
@@ -108,24 +89,7 @@ button {
   left: 1rem;
   top: -0.1rem;
 }
-
-.header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 35px;
-  width: 100%;
-  background: rgba(0, 0, 0, 0);
-  text-align: left;
-  z-index: 2;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-  
+ 
   /* Style the buttons */
   .btn {
     border: none;
@@ -169,25 +133,46 @@ button {
     background-color: rgb(28, 133, 56);
   }
 
+  .gallery img {
+    border-radius: 10px;
+  }
 
-
-
-.items .item{
-  background:#f3f3f3;
-  padding: 20px;
-  border-radius: 10px;
-  border:solid 1px #aaa;
-  display:inline-block;
-  width: 31%;
-  margin:1%;
+  .gallery {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 8px;
+  }
+  .gallery li { 
+    display: none;
+    list-style: none;
+    margin-right: 10px;
+  }
+  
+/* Add your own custom styles here */
+#items-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.items .item .item-title{
-  font-size: 20pt;
-  font-weight:bold;
-  letter-spacing: -1px;
+.column {
+  flex: 1;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
 }
 
-.items .item .item-image{
-  width: 100%;
+.item {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
 }

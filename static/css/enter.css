@@ -1,0 +1,111 @@
+html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Lexend Zetta', sans-serif;
+    color: white;
+    background: rgb(0, 0, 0);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+@media only screen and (min-height: 150px) {
+
+    .sectionClassP {
+        height: 120px;
+    }
+
+} 
+
+@media only screen and (min-height: 450px) {
+
+    .sectionClassP {
+        height: 200px;
+    }
+
+} 
+
+@media only screen and (min-height: 660px) {
+
+    .sectionClassP {
+        height: 235px;
+    }
+
+}
+
+@media only screen and (min-height: 820px) {
+
+    .sectionClassP {
+        height: 345px;
+    }
+
+} 
+
+@media only screen and (min-height: 1200px) {
+
+    .sectionClassD {
+        height: 345px;
+    }
+
+}
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 35px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    z-index: 2;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 35px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    z-index: 2;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 98%;
+    height: 98%; 
+    overflow: hidden;
+    
+}
+.video-container video {
+    
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%; 
+    min-height: 100%; 
+  
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: 80%;
+    height: 80%;
+
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.center {
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
