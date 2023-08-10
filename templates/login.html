@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/static/css/enter.css">
+    <link rel="stylesheet" href="/static/css/login.css">
     <script src=""></script>
     
     <title>Franz Röhrle</title>
@@ -21,10 +21,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <br>
+
     <div id="header" class="header">
-        <p style="font-size: 10px; color: rgb(255, 0, 0); user-select: none;">Under Construction</p>
+        
     </div>
+
+    <form class="pwBox center" action="{{ url_for('authenticate') }}" method="post">
+                
+        <input class="formButton" style="width: 150px; height: 18px;" type="text" name="username" placeholder="USER" required><br>
+
+        <input class="formButton" style="width: 150px; height: 18px;" type="password" name="password" placeholder="PWRD" required><br>
+        
+        <button class="formButton" type="submit">Log In</button><br>
+        <p style="font-size: 10px; color: rgba(152, 152, 152, 0.678); user-select: none;">This website is under construction, <br> and can only entered with a password <br> at this time.</p>
+    </form>
+
     <br>
+
     <section style="height: 100vh;">
 
         <div class="video-container">
@@ -36,7 +49,7 @@
     </section>
 
     <div id="footer" class="footer">
-        <p style="font-size: 10px; color: rgba(152, 152, 152, 0.159); user-select: none;">Franz Röhrle ©2023</p>
+        <p style="font-size: 10px; color: rgba(152, 152, 152, 0.419); user-select: none;">Franz Röhrle ©2023</p>
     </div>
     
 

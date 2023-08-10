@@ -147,7 +147,20 @@ section::-webkit-scrollbar{
     text-align: center;
     transition: transform 350ms 45ms;
 }
-
+.formButton {
+    border: solid 3px rgb(19, 19, 19);
+    border-radius: 20px;
+    background: rgb(6, 6, 6);
+    color: rgb(161, 161, 161);
+    margin: 4px;
+    width: 65px;
+    height: 30px;
+    display: inline;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    transition: transform 350ms 45ms;
+}
 
 .fadeIn {
     animation: fadeIn 1.3s forwards;
@@ -166,7 +179,12 @@ section::-webkit-scrollbar{
 .buttonScaleAnim:active {
     transform: scale(0.95);
 }
-
+.formButton:hover {
+    transform: scale(1.05, 1.05);
+}
+.formButton:active {
+    transform: scale(1.1, 0.90);
+}
 .center {
     margin: 0;
     position: fixed;
